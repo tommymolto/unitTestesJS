@@ -32,18 +32,10 @@ var validaEmail = function(){
             return true;
         }
         return false;
-    }
-    var trataErro = function(x,y,z){
-        this.tipoeErro = {
-                erro: x,
-                tipoeErro: y,
-                mensagem: z
-            }
     };
+    
     return {
-        email: email,
         validaEmail: validaEmail,
-        trataErro: trataErro,
         tamanhoDominio: tamanhoDominio,
         tamanhoUsuario: tamanhoUsuario
     }

@@ -20,24 +20,24 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">89.47% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>17/19</span>
+        <span class='fraction'>17/17</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">76.92% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>10/13</span>
+        <span class='fraction'>15/15</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>3/3</span>
+        <span class='fraction'>4/4</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">89.47% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>17/19</span>
+        <span class='fraction'>17/17</span>
       </div>
     </div>
   </div>
@@ -85,52 +85,40 @@
 40
 41
 42
-43
-44
-45
-46
-47
-48
-49</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
+43</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
 <span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1×</span>
-<span class="cline-any cline-yes">6×</span>
-<span class="cline-any cline-yes">6×</span>
-<span class="cline-any cline-yes">6×</span>
-<span class="cline-any cline-yes">6×</span>
-<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-yes">7×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
 <span class="cline-any cline-yes">5×</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4×</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1×</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1×</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1×</span>
-<span class="cline-any cline-yes">1×</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1×</span>
-<span class="cline-any cline-yes">1×</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1×</span>
@@ -140,51 +128,45 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1×</span></td><td class="text"><pre class="prettyprint lang-js">var validaEmail = function(){
-    var email = '';
     var validaEmail = function(x){
         var usuario = x.substring(0, x.indexOf("@"));
         var dominio = x.substring(x.indexOf("@")+ 1, x.length);
-        erro = {};
-        tipoeErro ={ erro: erro, tipo: '', mensagem:''};
-        if (usuario.length &gt;=1) {
-            return true;
-            // esse tipo de coment cada o code coverage;
-            /* esse
-            tipo
-            tambem
-            */
-        }
-        <span class="missing-if-branch" title="if path not taken" >I</span>if (dominio.length &gt;=3) {
-<span class="cstat-no" title="statement not covered" >            return true;</span>
-            //this.erro=this.trataErro(true,'DOMINIO','Dominio pequeno');
-            //return this.erro;
-        }
+       
+       
         /* criem um caso para cada um abaixo */
-            <span class="missing-if-branch" title="if path not taken" >I</span>if ((usuario.search("@")==-1) &amp;&amp; 
+            if (
+                this.tamanhoUsuario(usuario) &amp;&amp;
+                this.tamanhoDominio(dominio) &amp;&amp;
+                (usuario.search("@")==-1) &amp;&amp; 
             (dominio.search("@")==-1) &amp;&amp;
             (usuario.search(" ")==-1) &amp;&amp; 
             (dominio.search(" ")==-1) &amp;&amp;
             (dominio.search(".")!=-1) &amp;&amp;      
             (dominio.indexOf(".") &gt;=1)&amp;&amp; 
-            (<span class="branch-6 cbranch-no" title="branch not covered" >dominio.lastIndexOf(".") &lt; dominio.length - 1)</span>) {
-<span class="cstat-no" title="statement not covered" >                return false;</span>
+            (dominio.lastIndexOf(".") &lt; dominio.length - 1)) {
+                return true;
         }
         else{
-            this.erro = this.trataErro(false,'SUCESSO','EMAIL OK');
-            return this.erro;
+            return false;
         } 
     };
-    var trataErro = function(x,y,z){
-        this.tipoeErro = {
-                erro: x,
-                tipoeErro: y,
-                mensagem: z
-            }
+    var tamanhoUsuario = function(x){
+         if (x.length &gt;=1) {
+            return true;
+        }
+        return false;
     };
+    var tamanhoDominio = function(dominio){
+         if (dominio.length &gt;=3) {
+            return true;
+        }
+        return false;
+    };
+    
     return {
-        email: email,
         validaEmail: validaEmail,
-        trataErro: trataErro
+        tamanhoDominio: tamanhoDominio,
+        tamanhoUsuario: tamanhoUsuario
     }
 }
 module.exports = validaEmail;</pre></td></tr>
@@ -193,7 +175,7 @@ module.exports = validaEmail;</pre></td></tr>
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Mon Mar 12 2018 00:53:42 GMT+0000 (UTC)
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Mon Mar 12 2018 13:48:15 GMT+0000 (UTC)
 </div>
 </div>
 <script src="../prettify.js"></script>
