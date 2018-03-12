@@ -1,9 +1,9 @@
-cd tesUnitarios/
-npm -g install qunit istanbul
-npm init
-npm --save install qunit istanbul
-npm --save instal node-qunit
-qunit -c app.js -t testes.js --cov
+cd tesUnitarios/ <br />
+npm -g install qunit istanbul<br />
+npm init<br />
+npm --save install qunit istanbul<br />
+npm --save instal node-qunit<br />
+qunit -c app.js -t testes.js --cov<br />
 
 TP3:
 Dada a funcao valida email
