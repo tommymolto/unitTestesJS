@@ -1,38 +1,38 @@
 var validaEmail = function(){
-    var email = '';
     var validaEmail = function(x){
         var usuario = x.substring(0, x.indexOf("@"));
         var dominio = x.substring(x.indexOf("@")+ 1, x.length);
-        erro = {};
-        tipoeErro ={ erro: erro, tipo: '', mensagem:''};
-        if (usuario.length >=1) {
-            return true;
-            // esse tipo de coment cada o code coverage;
-            /* esse
-            tipo
-            tambem
-            */
-        }
-        if (dominio.length >=3) {
-            return true;
-            //this.erro=this.trataErro(true,'DOMINIO','Dominio pequeno');
-            //return this.erro;
-        }
+       
+       
         /* criem um caso para cada um abaixo */
-            if ((usuario.search("@")==-1) && 
+            if (
+                this.tamanhoUsuario(usuario) &&
+                this.tamanhoDominio(dominio) &&
+                (usuario.search("@")==-1) && 
             (dominio.search("@")==-1) &&
             (usuario.search(" ")==-1) && 
             (dominio.search(" ")==-1) &&
             (dominio.search(".")!=-1) &&      
             (dominio.indexOf(".") >=1)&& 
             (dominio.lastIndexOf(".") < dominio.length - 1)) {
-                return false;
+                return true;
         }
         else{
-            this.erro = this.trataErro(false,'SUCESSO','EMAIL OK');
-            return this.erro;
+            return false;
         } 
     };
+    var tamanhoUsuario = function(x){
+         if (x.length >=1) {
+            return true;
+        }
+        return false;
+    };
+    var tamanhoDominio = function(dominio){
+         if (dominio.length >=3) {
+            return true;
+        }
+        return false;
+    }
     var trataErro = function(x,y,z){
         this.tipoeErro = {
                 erro: x,
@@ -43,7 +43,9 @@ var validaEmail = function(){
     return {
         email: email,
         validaEmail: validaEmail,
-        trataErro: trataErro
+        trataErro: trataErro,
+        tamanhoDominio: tamanhoDominio,
+        tamanhoUsuario: tamanhoUsuario
     }
 }
 module.exports = validaEmail;
