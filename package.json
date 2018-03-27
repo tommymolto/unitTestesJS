@@ -1,7 +1,7 @@
 {
   "name": "testesunitarios",
   "version": "1.0.0",
-  "description": "",
+  "description": "cd tesUnitarios/ <br />\r npm -g install qunit istanbul<br />\r npm init<br />\r npm --save install qunit istanbul<br />\r npm --save instal node-qunit<br />\r qunit -c app.js -t testes.js --cov<br />",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,6 +11,14 @@
   "dependencies": {
     "istanbul": "^0.4.5",
     "node-qunit": "^1.0.0",
-    "qunit": "^2.5.1"
-  }
+    "qunit": "^2.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tommymolto/unitTestesJS.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tommymolto/unitTestesJS/issues"
+  },
+  "homepage": "https://github.com/tommymolto/unitTestesJS#readme"
 }

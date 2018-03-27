@@ -1,8 +1,8 @@
-cd tesUnitarios/ <br />
-npm -g install qunit istanbul<br />
+cd unitTestesJS/ <br />
+npm -g install qunit istanbul node-qunit<br />
 npm init<br />
 npm --save install qunit istanbul<br />
-npm --save instal node-qunit<br />
+npm --save install node-qunit<br />
 qunit -c app.js -t testes.js --cov<br />
 
 TP3:
